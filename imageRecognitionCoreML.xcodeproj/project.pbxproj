@@ -12,6 +12,7 @@
 		FAC6B35E24188A7E00F6AF59 /* lion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAC6B35A24188A7E00F6AF59 /* lion.jpg */; };
 		FAC6B35F24188A7E00F6AF59 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAC6B35B24188A7E00F6AF59 /* cat.jpg */; };
 		FAC6B36024188A7E00F6AF59 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAC6B35C24188A7E00F6AF59 /* dog.jpg */; };
+		FAC6B3622419DF5B00F6AF59 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6B3612419DF5B00F6AF59 /* UIImage+Additions.swift */; };
 		FADA45262418863700BBC834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA45252418863700BBC834 /* AppDelegate.swift */; };
 		FADA45282418863700BBC834 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA45272418863700BBC834 /* SceneDelegate.swift */; };
 		FADA452A2418863700BBC834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA45292418863700BBC834 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		FAC6B35A24188A7E00F6AF59 /* lion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lion.jpg; sourceTree = "<group>"; };
 		FAC6B35B24188A7E00F6AF59 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		FAC6B35C24188A7E00F6AF59 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		FAC6B3612419DF5B00F6AF59 /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
 		FADA45222418863700BBC834 /* imageRecognitionCoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imageRecognitionCoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA45252418863700BBC834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADA45272418863700BBC834 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				FADA452E2418863A00BBC834 /* Assets.xcassets */,
 				FADA45302418863A00BBC834 /* LaunchScreen.storyboard */,
 				FADA45332418863A00BBC834 /* Info.plist */,
+				FAC6B3612419DF5B00F6AF59 /* UIImage+Additions.swift */,
 			);
 			path = imageRecognitionCoreML;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				FAC6B3582418879800F6AF59 /* Inceptionv3.mlmodel in Sources */,
 				FADA45262418863700BBC834 /* AppDelegate.swift in Sources */,
 				FADA45282418863700BBC834 /* SceneDelegate.swift in Sources */,
+				FAC6B3622419DF5B00F6AF59 /* UIImage+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
