@@ -26,7 +26,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func chooseImagePressed(sender: Any) {
         
         let imagePickerController = UIImagePickerController()
-        print("chooseImagePressed2")
+        print("chooseImagePressed!")
         
         
         let actionSheet = UIAlertController(title: "Photo source", message: "Choose a source", preferredStyle: .actionSheet)
@@ -35,7 +35,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
                 imagePickerController.sourceType = .camera
-                self.present(imagePickerController, animated: true, completion: nil)
+//                self.present(imagePickerController, animated: true, completion: nil)
+                self.getImage(fromSourceType: .camera)
                 print("camera is picked!")
             } else {
                 print("Camera not available!")
@@ -74,6 +75,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 //        index = index + 1;
     }
 
+    // this handles what happens after taking a photo
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         print("imagePickerController has run!!")
         
@@ -89,7 +91,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func runImageRecognition(image :UIImage) {
-        print("runImageRecognition has run")
         
         let resizedImage = image.resizeTo(size: CGSize(width: 299, height: 299))
 
@@ -102,7 +103,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     //get image from source type
     func getImage(fromSourceType sourceType: UIImagePickerController.SourceType) {
-        print("inside getImage")
+        print("inside getImage");
 
         //Check is source type available
         if UIImagePickerController.isSourceTypeAvailable(sourceType) {
