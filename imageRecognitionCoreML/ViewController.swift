@@ -54,25 +54,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         
         self.present(actionSheet, animated: true, completion: nil)
-        
-        
-        // 'nextPressed' code below
-        
-//        if index > self.images.count - 1 {
-//            index = 0
-//        }
-//        let img = UIImage(named: images[index])
-//        self.pictureImageView.image = img
-//
-//        let resizedImage = img?.resizeTo(size: CGSize(width: 299, height: 299))
-//
-//        let buffer = resizedImage?.toBuffer()
-//
-//        let prediction = try! self.model.prediction(image: buffer!)
-//
-//        self.titleLabel.text = prediction.classLabel
-//
-//        index = index + 1;
     }
 
     // this handles what happens after taking a photo
